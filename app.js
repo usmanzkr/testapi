@@ -9,6 +9,7 @@ const secretKey = 'your-secret-key';
 
 // Middleware
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 const upload = multer({ dest: 'uploads/' }); // Folder untuk menyimpan file upload
 
 // Dummy user data
