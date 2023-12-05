@@ -3,9 +3,8 @@ const bodyParser = require('body-parser');
 const multer = require('multer');
 const jwt = require('jsonwebtoken');
 const { configDotenv } = require('dotenv');
-
 const app = express();
-const dotenv = require("dotenv");
+
 dotenv.config();
 const port =  process.env.PORT ||3000;
 const secretKey = 'your-secret-key';
