@@ -138,7 +138,7 @@ app.get('/stories/:id', verifyToken, (req, res) => {
 
 // Endpoint Home
 app.get('/', (req, res) => {
-  res.json({ error: false, message: 'Home endpoint Work' });
+  res.json({ error: false, message: 'Home endpoint Berjalan ya guys yak' });
 });
 
 // Jalankan server
