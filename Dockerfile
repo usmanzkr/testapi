@@ -5,5 +5,5 @@ ADD package*.json ./
 
 RUN npm install
 
-ADD ..
+ADD . .
 CMD node app.js

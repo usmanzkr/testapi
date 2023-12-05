@@ -4,11 +4,12 @@ const multer = require('multer');
 const jwt = require('jsonwebtoken');
 
 const app = express();
-const port = 3000;
+const port =  process.env.PORT ||3000;
 const secretKey = 'your-secret-key';
 
 // Middleware
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 const upload = multer({ dest: 'uploads/' }); // Folder untuk menyimpan file upload
 
 // Dummy user data
