@@ -4,9 +4,8 @@ const multer = require('multer');
 const jwt = require('jsonwebtoken');
 const { configDotenv } = require('dotenv');
 const app = express();
-const port =  process.env.PORT || 3000;
+const port = 3000;
 const secretKey = 'your-secret-key';
-dotenv.config();
 
 // Middleware
 app.use(bodyParser.json());
